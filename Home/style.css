@@ -202,3 +202,8 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width= 450px) {
+    flex-direction: columns;
+    
+}
