@@ -9,6 +9,9 @@
     height: 110px;
     font-family: montserrat-medium,sans-serif;
 }
+#bars{
+    display: none;
+}
 #top-nav{
     margin: auto;
     display: flex;
@@ -204,6 +207,5 @@
 }
 
 @media screen and (max-width= 450px) {
-    flex-direction: columns;
     
 }
