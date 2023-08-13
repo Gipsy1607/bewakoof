@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav-bar{
+    border: 1px solid red;
+    width: 300%;
+}
+#top-nav{
+    border: 1px solid black;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -38,7 +38,7 @@
     width: 95%;
     height: 550px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 #left-info{
     width: 25%;
@@ -67,14 +67,15 @@
 }
 #img1{
     width: 40%;
-    height: 93%;
+    height: 100%;
     background-image: url("https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg");
 }
 #img2{
     width: 40%;
-    height: 93%;
+    height: 100%;
     background-image: url("https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg");
 }
+
 @media screen and (max-width: 900px) {
     #nav-bar> h4{
         font-size: 20px;
