@@ -66,16 +66,107 @@
     justify-content: space-evenly;
 }
 #img1{
-    width: 40%;
+    width: 45%;
     height: 100%;
+    background-size: cover;
     background-image: url("https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg");
+}
+#card1{
+    width: 60%;
+    height: 75%;
+    margin: 10% 10%;
+    padding: 10% 10%;
+    background-color: grey;
+    display: none;
+}
+#card1> div:nth-child(1){
+    width: 100%;
+    height: 70%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("./5ow8deo1.png");
+}
+#card1> div:nth-child(2)> p{
+    background-color: grey;
+    color: black;
+}
+#img1:hover> div:nth-child(1){
+    display:block;
 }
 #img2{
-    width: 40%;
+    width: 45%;
     height: 100%;
+    background-size: cover;
     background-image: url("https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg");
 }
-
+#card2{
+    width: 60%;
+    height: 75%;
+    margin: 10% 10%;
+    padding: 10% 10%;
+    background-color: grey;
+    display: none;
+}
+#card2> div:nth-child(1){
+    width: 100%;
+    height: 70%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image9.jpg");
+}
+#card2> div:nth-child(2)> p{
+    background-color: grey;
+    color: black;
+}
+#img2:hover> div:nth-child(1){
+    display: block;
+}
+#web-div{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+#web-div> div:nth-child(2){
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+#web-div> div:nth-child(2)> div:nth-child(1){
+    width: 18%;
+    height: 65%;
+    background-size: cover;
+    background-image: url("./yrkgkrgg.png");
+}
+#web-div> div:nth-child(2)> div:nth-child(2){
+    width: 18%;
+    height: 65%;
+    background-size: cover;
+    background-image: url("./k10qyolh.png");
+}
+#web-div> div:nth-child(2)> div:nth-child(3){
+    width: 18%;
+    height: 65%;
+    background-size: cover;
+    background-image: url("./jsngd8pl.png");
+}
+#web-div> div:nth-child(2)> div:nth-child(4){
+    width: 18%;
+    height: 65%;
+    background-size: cover;
+    background-image: url("./f6sgtcw8.png");
+}
+#web-div> div:nth-child(2)> div:nth-child(5){
+    width: 18%;
+    height: 65%;
+    background-size: cover;
+    background-image: url("./o2y4vo9u.png");
+}
+#div:nth-child(2):hover>button{
+    display: block;
+}
 @media screen and (max-width: 900px) {
     #nav-bar> h4{
         font-size: 20px;
