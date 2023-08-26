@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test product form</title>
+</head>
+<body>
+    <form onsubmit="event">
+        <label for="">Name of the product</label> <br>
+        <input type="text" id="name"><br>
+        <label for="">Price of the product</label><br>
+        <input type="number" id="price"><br>
+        <label for="">Image of the product</label><br>
+        <input type="file" id="image"><br>
+        <label for="">Category of the product</label><br>
+        <input type="text" id="category"><br>
+        <input type="submit"><br>
+    </form>
+    <button onclick="getusers" id="users">Get users</button>
+    <script>
+        function event(event){
+            var namepod = document.getElementById("name").value;
+            var pricepod = document.getElementById("price").value;
+            var imagepod = document.getElementById("image").value;
+            var categorypod = document.getElementById("category").value;
+
+            if(namepod && pricepod && imagepod && categorypod){
+                alert("The Product form has your products name....")
+                if(namepod===pricepod){
+
+                    const userobject = {name: namepod,price: pricepod,image: imagepod,category: categorypod}
+                    var array = JSON.parse(localStorage.getItem("users")) || [];
+                    array.push(userobject)
+
+                    localStorage.setItem(users ,JSON.stringify(array))
+
+                    document.getElementById("name").value = "";
+                    document.getElementById("price").value = "";
+                    document.getElementById("image").value = "";
+                    document.getElementById("category").value = "";
+                    alert("Your Form is filled...")
+                } 
+                else{
+                    alert("Your Form is not filled")
+                }
+            }
+            else{
+                alert("The other feilds are also mandatory!!!")
+            }
+        } 
+        function getusers(){
+            JSON.stringify(localStorage.getItem("users"))
+            console.log(users)
+        }
+    </script>
+</body>
+</html>
