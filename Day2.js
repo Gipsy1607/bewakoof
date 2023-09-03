@@ -59,7 +59,7 @@
 // 11th iteration :i = 11, 11 <= 10 - false 
 
 var age = 88;
-console.log(age > 18)
+// console.log(age > 18)
 
 if (age > 18) {
     console.log("You are older than 18")
@@ -67,4 +67,4 @@ if (age > 18) {
     console.log("You are smaller than 18..")
 }
 
-console.log(300 === "300")
+// console.log(300 === "300")

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form onsubmit="register()">
+        <label for="name">Name</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password"><br>
+        <label for="confirmpassword">Confirm Password</label><br>
+        <input type="password" id="confirmpassword"><br>
+        <input type="submit" id="submit"><br>
+    </form>
+    <button onclick="users()">See Users</button>
+
+    <script>
+        function register(event){
+            const username = document.getElementById("name").value;
+            const useremail = document.getElementById("email").value;
+            const userpassword = document.getElementById("password").value;
+            const confirmpassword = document.getElementById("confirmpassword").value;
+            console.log(username, useremail, userpassword,)
+            
+            if(username && useremail && userpassword && confirmpassword){
+                alert("Your Email and password is registered by us");
+                if(userpassword === confirmpassword){
+                   
+                    alert("The password and confirm password are matching...");
+                   
+                    const userobject = {name: username, email: useremail, password: userpassword}
+                    var array = JSON.parse(localStorage.getItem("users")) || [];
+                    array.push(userobject)
+                   
+                    localStorage.setItem("users", JSON.stringify(array))
+    
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                    document.getElementById("confirmpassword").value = "";
+                
+                    alert("The Registeration is succesful...")
+                }else{
+                    alert("The password and confirm password are not matched...");
+                }
+            } else{
+                alert("All the fields are mandatory...")
+            }
+            }
+    function users() {
+        var users = JSON.parse(localStorage.getItem("users"));
+        console.log(users)
+    }
+    </script>
+</body>
+
+</html>
