@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    background-color: rgb(255,255,255);
+    margin: auto;
+    width: 100%;
+    height: 110px;
+    font-family: montserrat-medium, sans-serif;
+}
+#bars{
+    display: none;
+}
+#top-nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 1273px;
+    height: fit-content;
+    background-color: rgb(238,238,238);
+}
+#left-nav{
+    float: left;
+    align-content: baseline;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+#right-nav{
+    float: right;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+#middle-nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1273px;
+    height: 52px;
+    border-bottom: 0.6px solid #fdd835;
+}
+#M1{
+    float: left;
+    padding-top: 16px;
+    color: rgb(25,25,25);
+    width: 30%;
+    height: 30px;
+    text-align: center;
+}
+#L1{
+    padding-top: 12px;
+    width: 147px;
+    height: 40px;
+    display: inline-block;
+}
+#search{
+    display: flex;
+    background-color: rgb(234,234,234);
+    border-radius: 10px;
+    border: none;
+    margin-top: 6px;
+}
+#icon{
+    color: rgb(117,117,117);
+    padding: 10px 0px 10px 10px;
+}
+#R1{
+    display: flex;
+    justify-content: space-around;
+}
+#seperator{
+    margin: auto;
+    padding: 5px 2px 5px 10px;
+}
+#Login{
+    display: flex;
+}
+#left-side{
+    background-color: rgb(255,249,224);
+}
+#left-side>h2{
+    font-size: 30px;
+    font-family: montserrat,sans-serif;
+}
+#left-side>img{
+    display: block;
+}
