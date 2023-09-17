@@ -16,22 +16,23 @@
     font-weight: -40%;
     color: #5a525e;
     font-size: smaller;
+    padding: 8px 0px 8px 0px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 1273px;
     height: fit-content;
     background-color: rgb(238,238,238);
 }
 #left-nav{
-    margin-left: 20px;
+    float: left;
     align-content: baseline;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
 }
 #right-nav{
-    margin-right: 30px;
+    float: right;
     width: 15%;
     display: flex;
     justify-content: space-around;

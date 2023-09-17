@@ -164,7 +164,7 @@
     background-size: cover;
     background-image: url("./o2y4vo9u.png");
 }
-#div:nth-child(2):hover>button{
+#web-div> div:nth-child(2):hover> button{
     display: block;
 }
 @media screen and (max-width: 900px) {
